@@ -1,11 +1,19 @@
+import Navbar from "./scenes/Navbar";
+import { useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 
 function App() {
-  return (
-    <div className="App">
+  const [selectedPage, setSelectedPage] = useState('home');
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
-    </div>
-  );
+  return <div className="App bg -deep-blue">
+    <Navnar
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+    />
+  </div>
+
 }
 
 export default App;

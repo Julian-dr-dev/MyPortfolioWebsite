@@ -446,15 +446,15 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position:
+  --tw-gradient-to-position:
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
   --tw-numeric-figure:  ;
   --tw-numeric-spacing:  ;
   --tw-numeric-fraction:  ;
@@ -481,9 +481,9 @@ video {
   --tw-backdrop-grayscale:  ;
   --tw-backdrop-hue-rotate:  ;
   --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::-webkit-backdrop{
@@ -524,7 +524,6 @@ video {
   --tw-invert:  ;
   --tw-saturate:  ;
   --tw-sepia:  ;
-  --tw-drop-shadow:  ;
   --tw-backdrop-blur:  ;
   --tw-backdrop-brightness:  ;
   --tw-backdrop-contrast:  ;
@@ -534,6 +533,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+::-webkit-backdrop{
+  --tw-drop-shadow:  ;
 }
 
 ::backdrop{
