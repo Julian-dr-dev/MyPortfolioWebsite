@@ -8,7 +8,7 @@ function App() {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return <div className="App bg -deep-blue">
-    <Navnar
+    <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
     />
