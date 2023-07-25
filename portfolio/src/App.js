@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Landing from "./scenes/Landing";
+import { motion } from "framer-motion";
 
 
 function App() {
