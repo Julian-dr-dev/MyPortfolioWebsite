@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Landing from "./scenes/Landing";
 import { motion } from "framer-motion";
+import LineGradient from "./components/LineGradient";
+import MySkills from "./scenes/MySkills";
 
 
 function App() {
@@ -34,6 +36,11 @@ function App() {
           />
       )}
       <Landing setSelectedPage={setSelectedPage}/>
+    </div>
+    <LineGradient />
+    <div className="w-5/6 mx-auto md:h-full">
+      <MySkills />
+
     </div>
   </div>
 
