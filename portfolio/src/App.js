@@ -6,7 +6,8 @@ import Landing from "./scenes/Landing";
 import { motion } from "framer-motion";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
-import Projects from "./scenes/Projects.jsx";
+import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
 import Testimonials from "./scenes/Testimonials";
 
 function App() {
@@ -52,11 +53,11 @@ function App() {
       <Projects/>
     </div>
 
-    <LineGradient />
-    <div className="w-5/6 mx-auto md:h-full">
-      <Testimonials/>
-    </div>
+    <LineGradient/>
+    <div className>
+      <Contact />
 
+    </div>
 
 
 
