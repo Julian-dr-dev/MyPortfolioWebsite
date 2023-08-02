@@ -75,7 +75,7 @@ const MySkills = () => {
                     </div>
                     <p className="mt-5">
                         Julian has completed extensive coursework in computer science subjects
-                        such as data structures & alogrithmsdatabase management, software engineering,
+                        such as data structures & alogrithms, database management, software engineering,
                         discrete mathematics, linear algebra, project management, and operating systems.
                     </p>
                 </motion.dv>
@@ -102,9 +102,14 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Julian has completed extensive coursework in computer science subjects
-                        such as data structures & alogrithmsdatabase management, software engineering,
-                        discrete mathematics, linear algebra, project management, and operating systems.
+                        I have deep familiarity in constructing software within the Node.js & express.js framework
+                        as well as managing relation database systems which include various MySQL database programs and
+                        NoSQL database programs such as MongoDB. Supplementaly, I have independently developed projects
+                        primarily in Java within Java Swing UI framework and have engaged in collaborative team projects
+                        where in which I've applied the Agile development methodology.
+
+
+
                     </p>
                 </motion.dv>
 
@@ -131,9 +136,7 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Julian has completed extensive coursework in computer science subjects
-                        such as data structures & alogrithmsdatabase management, software engineering,
-                        discrete mathematics, linear algebra, project management, and operating systems.
+
                     </p>
                 </motion.dv>
 

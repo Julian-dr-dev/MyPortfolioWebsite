@@ -1,7 +1,7 @@
 
 const SocialMediaIcons = () => {
     return (
-        <div lassName="flex justify-center md:justify-start my-10 gap-7">
+        <div className="flex justify-center md:justify-start my-10 gap-7">
 
             <a
                 className="hover:opacity-50 transition duration-500"
@@ -9,7 +9,7 @@ const SocialMediaIcons = () => {
                 target="_blank"
                 rel="noreferrer"
             >
-                <img alt="linkedin-link" src="../assets/LinkedInIcon" />
+                <img alt="linkedin-link" src="../assets/LinkedInIcon.png" />
             </a>
 
 
