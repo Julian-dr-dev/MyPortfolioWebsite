@@ -74,7 +74,7 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Julian has completed extensive coursework in computer science subjects
+                        Given my experience completing extensive coursework in computer science subjects
                         such as data structures & alogrithms, database management, software engineering,
                         discrete mathematics, linear algebra, project management, and operating systems.
                     </p>
@@ -102,9 +102,9 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        I have deep familiarity in constructing software within the Node.js & express.js framework
+                        I  also have a deep familiarity in constructing software within the Node.js & express.js framework
                         as well as managing relation database systems which include various MySQL database programs and
-                        NoSQL database programs such as MongoDB. Supplementaly, I have independently developed projects
+                        NoSQL database programs such as MongoDB. Additionally, I have independently developed projects
                         primarily in Java within Java Swing UI framework and have engaged in collaborative team projects
                         where in which I've applied the Agile development methodology.
 
@@ -136,6 +136,11 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
+                        Supplementary, I have also enhanced my full stack capabilities through the development
+                        of projects such as this current website you are viewing as well as a instagram esque desktop
+                        application that allows users to post pictures, comment, and like other users posts through their accounts.
+                        Such skills I have picked up whilst developing thses projects include HTML, CSS, React.js, Tailwind, and framer
+                        motion.
 
                     </p>
                 </motion.dv>

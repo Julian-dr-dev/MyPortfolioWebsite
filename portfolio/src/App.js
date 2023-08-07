@@ -9,6 +9,7 @@ import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import AboutMe from "./scenes/AboutMe";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -39,6 +40,19 @@ function App() {
       )}
       <Landing setSelectedPage={setSelectedPage}/>
     </div>
+
+
+    <LineGradient />
+    <div className="w-5/6 mx-auto md:h-full ">
+      <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+      >
+        <AboutMe />
+      </motion.div>
+    </div>
+
 
 
     <LineGradient />
