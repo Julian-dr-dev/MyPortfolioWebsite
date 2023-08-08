@@ -1,5 +1,6 @@
-import LineGradient from "../components/LineGradient";
+import React from "react";
 import { motion } from "framer-motion";
+import LineGradient from "../components/LineGradient";
 
 const container = {
     hidden: {},
@@ -15,21 +16,20 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+const Project = ({ title, description, githubUrl }) => {
+    const overlayStyles =
+        "relative mt-10 p-5 bg-grey hover:bg-opacity-90 transition duration-500 text-deep-blue rounded";
     const projectTitle = title.split(" ").join("-").toLowerCase();
 
     return (
-        <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair">{title}</p>
-                <p className="mt-7">
-                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-                    porttitor accumsan tincidunt.
-                </p>
-            </div>
-            <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+        <motion.div variants={projectVariant} className={overlayStyles}>
+            <p className="text-xl font-playfair font-semibold">{title}</p>
+            <p className="mt-3">{description}</p>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded">
+                    GitHub Repository
+                </button>
+            </a>
         </motion.div>
     );
 };
@@ -41,13 +41,12 @@ const Projects = () => {
             <motion.div
                 className="md:w-2/5 mx-auto text-center"
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
+                animate="visible"
                 variants={{
                     hidden: { opacity: 0, y: -50 },
                     visible: { opacity: 1, y: 0 },
                 }}
+                transition={{ duration: 0.5 }}
             >
                 <div>
                     <p className="font-playfair font-semibold text-4xl">
@@ -57,46 +56,56 @@ const Projects = () => {
                         <LineGradient width="w-2/3" />
                     </div>
                 </div>
-                <p className="mt-10 mb-10">
-                    Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-                    fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-                    purus nec eget eleifend ut elit.
-                </p>
+                <p className="mt-10 mb-10">Check out what I've been working on!</p>
             </motion.div>
 
             {/* PROJECTS */}
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10">
                 <motion.div
-                    className="sm:grid sm:grid-cols-3"
+                    className="flex flex-col items-center"
                     variants={container}
                     initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
+                    animate="visible"
                 >
                     {/* ROW 1 */}
-                    <div
-                        className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-                    >
-                        BEAUTIFUL USER INTERFACES
-                    </div>
-                    <Project title="Project 1" />
-                    <Project title="Project 2" />
+
+
+                    <Project
+                        title="Project 1"
+                        description="This is the description for Project 1."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
+                    <Project
+                        title="Project 2"
+                        description="This is the description for Project 2."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
 
                     {/* ROW 2 */}
-                    <Project title="Project 3" />
-                    <Project title="Project 4" />
-                    <Project title="Project 5" />
+                    <Project
+                        title="Project 3"
+                        description="This is the description for Project 3."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
+                    <Project
+                        title="Project 4"
+                        description="This is the description for Project 4."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
+                    <Project
+                        title="Project 5"
+                        description="This is the description for Project 5."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
 
                     {/* ROW 3 */}
-                    <Project title="Project 6" />
-                    <Project title="Project 7" />
-                    <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-                    >
-                        SMOOTH USER EXPERIENCE
-                    </div>
+                    <Project
+                        title="Project 6"
+                        description="This is the description for Project 6."
+                        githubUrl="https://github.com/Julian-dr-dev"
+                    />
+
+
                 </motion.div>
             </div>
         </section>
@@ -104,3 +113,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
