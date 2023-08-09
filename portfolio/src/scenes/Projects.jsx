@@ -26,7 +26,7 @@ const Project = ({ title, description, githubUrl }) => {
             <p className="text-xl font-playfair font-semibold">{title}</p>
             <p className="mt-3">{description}</p>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded">
+                <button className="mt-3 bg-blue-500 text-blue px-4 py-2 rounded underline">
                     GitHub Repository
                 </button>
             </a>
@@ -71,20 +71,28 @@ const Projects = () => {
 
 
                     <Project
-                        title="Project 1"
-                        description="This is the description for Project 1."
+                        title="Full stack social media app"
+                        description="A fullstack instagram-esque desktop app using Node, React,
+                            MongoDB etc to render a fully  functional user interface enabling users
+                            to customize account profiles, post pictures,as well as like & comment on
+                            other posts. Includes user registration and login authentication."
                         githubUrl="https://github.com/Julian-dr-dev"
                     />
                     <Project
-                        title="Project 2"
-                        description="This is the description for Project 2."
+                        title="Java Tank Game"
+                        description="A java game built within the Java Swing UI framework using multiple java classes and APIs.
+                        Graphically intuitive and interactive tank game with a multiplayer feature and an entire developer
+                        created game environment. Includes multi-life, split screen, collision functionality & an additional AI tank.."
                         githubUrl="https://github.com/Julian-dr-dev"
                     />
 
-                    {/* ROW 2 */}
+
                     <Project
-                        title="Project 3"
-                        description="This is the description for Project 3."
+                        title="Java Lazarus Game"
+                        description="Single-player game with another entirely developer created game environment powered by many
+                         user created Java APIs. Numerous animated java classes with the implementation of an intricate use of
+                         inheritance and hierarchy. Makes use of the java swing tool kit to launch virtual machine game and menu
+                         panel to enhance user interface."
                         githubUrl="https://github.com/Julian-dr-dev"
                     />
                     <Project
