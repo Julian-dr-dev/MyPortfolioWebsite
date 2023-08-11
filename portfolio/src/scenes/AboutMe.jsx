@@ -27,6 +27,11 @@ const AboutMe = () => {
                     </p>
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
+                        Julian Maximilian Martinez is an inquisitive problem solver and life long learner with a deep for building
+                        software using computational technologies. He will be graduating with a bachelors degree in computer
+                        science from Sacramento State University in 2024. His interests include backend web development, cloud architecture,
+                        machine learning & artificial intelligence as well as financial analysis using machine learning and large scale
+                        data analysis.
 
 
                     </p>

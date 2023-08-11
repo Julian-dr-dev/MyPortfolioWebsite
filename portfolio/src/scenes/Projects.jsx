@@ -96,8 +96,9 @@ const Projects = () => {
                         githubUrl="https://github.com/Julian-dr-dev"
                     />
                     <Project
-                        title="Project 4"
-                        description="This is the description for Project 4."
+                        title="Wolf Project"
+                        description="A light weight React.js project that enables user input and redners output based on the question that is asked.
+                            Essentially a desktop app that functions as a quasi magic eigh ball."
                         githubUrl="https://github.com/Julian-dr-dev"
                     />
                     <Project
